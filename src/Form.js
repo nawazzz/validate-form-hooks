@@ -110,15 +110,16 @@ const Form = () => {
     <Flex 
         w='100%'
         bg='#f8f5f5'
-        py='50px' 
+        p='50px' 
         flexDir='column' 
         justifyContent='center'
         alignItems='center'
     >
-        <Heading textAlign='center'>Form Validation</Heading>
-        <Flex flexDir='column' justifyContent='center' alignItems='center'>
-            <Flex gap={{base: '50px', md: '200px'}} 
+        <Heading w='100%' textAlign={{base: 'left', md: 'center'}}>Form Validation</Heading>
+        <Flex flexDir='column' justifyContent='center' alignItems='center' w='100%'>
+            <Flex gap={{base: '50px', md: '200px'}} w='100%'
                 py='50px' flexDir={{md: 'row', base: 'column'}}
+                justifyContent='center'
             >
                 <InputComponent 
                     title='Email' name='email' placeholder='Email' value={inputEmailValue}
@@ -135,8 +136,9 @@ const Form = () => {
                     errorMessage={phoneErrorMessage}              
                 />          
             </Flex> 
-            <Flex gap={{base: '50px', md: '200px'}} 
+            <Flex gap={{base: '50px', md: '200px'}} w='100%'
                 py={{md: '50px'}} flexDir={{md: 'row', base: 'column'}}
+                justifyContent='center'
             >
                 <InputComponent 
                     title='Name' name='name' placeholder='Name' value={inputNameValue}
